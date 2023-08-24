@@ -111,29 +111,23 @@ p {
     background-color: #2589bd;
 }
 
-/* Style for heading within the benefits section */
-.benefits h3 {
-    margin-bottom: 10px;
-    text-align: center;
-    color: #ffffff;
-}
-
-/* Style for images within the benefits section */
-.benefits img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/* Individual benefit styles */
-/* Shared style for individual benefit sections */
-.benefit-lead, .benefit-brand, .benefit-cost {
+.card2 {
     margin-bottom: 32px;
     color: #ffffff;
+    & h3 {
+        margin-bottom: 10px;
+        text-align: center;
+        color: #ffffff;  
+    }
+    & img {
+        display: block;
+        margin: 10px auto;
+        max-width: 150px;       
+    }    
 }
 
-/* SEO, Reputation, and Social Media section styles */
-/* Shared style for specific content sections */
+
+
 
 
 /* Footer styles */
