@@ -20,7 +20,6 @@ p {
     font-size: 16px;
 }
 
-/* Class Selector */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -61,7 +60,6 @@ p {
     background-position: center;
 }
 
-/* Floating elements */
 .content {
     width: 75%;
     display: inline-block;
@@ -89,18 +87,11 @@ p {
     margin-right: 25px;
 }
 
-
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
-/* Content section styles */
-/* Style for the main content section */
-
-
-/* Benefits section styles */
-/* Style for the benefits section */
 .benefits {
     width: 20%;
     height: 100%;
@@ -126,20 +117,13 @@ p {
     }    
 }
 
-
-
-
-
-/* Footer styles */
-/* Style for the footer section */
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
+    & h2 {
+        font-size: 20px;
+    }
 
-/* Style for heading within the footer */
-.footer h2 {
-    font-size: 20px;
 }
