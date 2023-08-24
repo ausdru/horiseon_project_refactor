@@ -1,39 +1,49 @@
-/* Reset default styles */
-/* Apply border-box sizing, reset padding, and margin for all elements */
+/* Universal Selector */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-/* Body styles */
-/* Set the background color for the entire body */
+/* Element Selector */
 body {
     background-color: #d9dcd6;
 }
 
-/* Header styles */
-/* Style for the header section */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+p {
+    font-size: 16px;
+}
+
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    & h1 {
+        font-size: 48px;
+        display: inline-block;
+        .seo {
+            color: #d9dcd6;
+        }
+    }
+    & ul {
+        list-style-type: none;
+        display: inline-block;
+        margin-left: 25px;
+    }
+    & li {
+        display: inline-block;
+        margin-left: 25px;
+    }
 }
 
-/* Style for the header's main heading */
-.header h1 {
-    font-size: 48px;
-    display: inline-block;
-}
-
-/* Adjust color for a specific class within the header's main heading */
-.header h1 .seo {
-    color: #d9dcd6;
-}
-
-/* Style for the div within the header */
-.header div {
+.header nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     float: right;
@@ -41,42 +51,37 @@ body {
     margin-right: 20px;
 }
 
-/* Style for the unordered list within the header div */
-.header div ul {
-    list-style-type: none;
-}
-
-/* Style for list items within the unordered list */
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-/* Link styles */
-/* Set color and remove underline for links */
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-/* Paragraph styles */
-/* Set font size for paragraphs */
-p {
-    font-size: 16px;
-}
-
-/* Hero section styles */
-/* Styling for the hero section with background image */
 .hero {
     height: 850px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../assets/images/digital-marketing-meeting.jpg");
+    background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
 
-/* Floating elements */
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.card {
+    height: 300px;
+    padding: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    margin-bottom: 20px;
+    & h2 {
+        margin-bottom: 20px;
+        font-size: 36px;  
+    }
+    & img {
+        max-height: 200px;
+    }
+}
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -87,16 +92,6 @@ p {
     margin-left: 25px;
 }
 
-/* Content section styles */
-/* Style for the main content section */
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-/* Benefits section styles */
-/* Style for the benefits section */
 .benefits {
     width: 20%;
     height: 100%;
@@ -107,65 +102,28 @@ p {
     background-color: #2589bd;
 }
 
-/* Style for heading within the benefits section */
-.benefits h3 {
-    margin-bottom: 10px;
-    text-align: center;
-    color: #ffffff;
-}
-
-/* Style for images within the benefits section */
-.benefits img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/* Individual benefit styles */
-/* Shared style for individual benefit sections */
-.benefit-lead, .benefit-brand, .benefit-cost {
+.card2 {
     margin-bottom: 32px;
     color: #ffffff;
+    & h3 {
+        margin-bottom: 10px;
+        text-align: center;
+        color: #ffffff;  
+    }
+    & img {
+        display: block;
+        margin: 10px auto;
+        max-width: 150px;       
+    }    
 }
 
-/* SEO, Reputation, and Social Media section styles */
-/* Shared style for specific content sections */
-.search-engine-optimization, .online-reputation-management, .social-media-marketing {
-    height: 300px;
-    padding: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-/* Individual section image styles */
-/* Style for images within specific content sections */
-.search-engine-optimization img,
-.online-reputation-management img,
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-/* Individual section heading styles */
-/* Style for headings within specific content sections */
-.search-engine-optimization h2,
-.online-reputation-management h2,
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/* Footer styles */
-/* Style for the footer section */
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
+    & h2 {
+        font-size: 20px;
+    }
 
-/* Style for heading within the footer */
-.footer h2 {
-    font-size: 20px;
 }
